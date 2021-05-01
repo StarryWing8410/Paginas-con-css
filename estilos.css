@@ -6,7 +6,7 @@ body, head{
     background-color: #dbf6e9 ;
 }
 
-#menu-principal{
+.menu-principal{
     text-align: center;
     display: flex;
     padding-left: 0;
@@ -20,17 +20,17 @@ body, head{
     height: 50px;
 }
 
-#menu-principal a{
+.menu-principal a{
     color: white;
     font-weight: bold;
     text-decoration: none;
     }
 
-#menu-principal li:hover{
+.menu-principal li:hover{
     background-color: #ffdada ;
 }
 
-#menu-principal li{
+.menu-principal li{
 flex-grow: 1;
 padding: 1em 0;
 }
@@ -43,7 +43,7 @@ padding: 1em 0;
     padding: 1em;
 }
 
-body{
+.body-index{
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 1em;
@@ -60,5 +60,35 @@ body{
 }
 
 .aside-index{
+    grid-area: aside;
+}
+
+img{
+    width: 200px;
+}
+
+#h2-actores{
+    background-color: #ffdada;
+    padding: 5px;
+    text-align: center;
+}
+
+#body-actores{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    grid-template-areas: "header header"
+                        "main aside";
+}
+
+header{
+    grid-area: header;
+}
+
+#main-actores{
+    grid-area: main;
+}
+
+#aside-actores{
     grid-area: aside;
 }
