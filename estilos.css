@@ -67,7 +67,7 @@ img{
     width: 200px;
 }
 
-#h2-actores{
+.h2-actores{
     background-color: #ffdada;
     padding: 5px;
     text-align: center;
@@ -91,4 +91,20 @@ header{
 
 #aside-actores{
     grid-area: aside;
+}
+
+.img-carrera{
+    width: 150px;
+    margin-left: 50%;
+}
+
+#footer-carrera{
+    background-color: #9ddfd3;
+    display: inline-block;
+}
+
+.a-carrera{
+    text-decoration: none;
+    display: block;
+    margin-left: 50%;
 }
